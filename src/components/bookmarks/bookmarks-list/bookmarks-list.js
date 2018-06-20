@@ -14,7 +14,7 @@ import './bookmarks-list.css';
   index in map is the uuid created by action creator thus provides a unique key & id
 */
 const BookmarksList = props => (
-  <div className="bookmarks-list" style={{ display: props.bookmarks == null ? 'none' : '' }}>
+  <div className="bookmarks-list" style={{ display: props.bookmarks === null ? 'none' : '' }}>
     <h2 className="bookmarks-list-title">current bookmarks</h2>
     <ul>
       {_.map(props.bookmarks, (bookmark, index) => (

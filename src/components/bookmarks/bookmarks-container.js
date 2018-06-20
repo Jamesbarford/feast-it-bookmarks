@@ -8,7 +8,7 @@ import './bookmarks-container.css';
 // comonent acts as a wrapper of sorts for the form and the list of bookmarks
 const BookmarksContainer = props => (
   <div className="bookmarks-container">
-    <BookmarksForm />
+    <BookmarksForm {...props} />
     <BookmarksList {...props} />
   </div>
 );

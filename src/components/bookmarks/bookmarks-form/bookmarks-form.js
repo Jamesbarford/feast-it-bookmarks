@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
-import { createBookmark } from '../../../state/actions';
 
 import Input from '../form-elements/input/input';
 import FormButton from '../form-elements/button/button';
@@ -16,7 +15,7 @@ class BookmarksForm extends Component {
 
   //  fires the action creator to make a bookmark
   onSubmit(bookmark) {
-    this.props.createBookmark(bookmark);
+    this.props.create(bookmark);
     this.props.reset();
   }
 
@@ -78,7 +77,4 @@ function validate(values) {
 export default reduxForm({
   form: 'Bookmarks Form',
   validate,
-})(connect(
-  mapStateToProps,
-  { createBookmark },
-)(BookmarksForm));
+})(connect(mapStateToProps)(BookmarksForm));

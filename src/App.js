@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchBookmarks, deleteBookmark } from './state/actions';
+import { fetchBookmarks, deleteBookmark, createBookmark } from './state/actions';
 import BookmarksContainer from './components/bookmarks/bookmarks-container';
 
 import './App.css';
@@ -15,7 +15,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BookmarksContainer bookmarks={this.props.bookmarks} delete={this.props.deleteBookmark} />
+        <BookmarksContainer
+          bookmarks={this.props.bookmarks}
+          delete={this.props.deleteBookmark}
+          create={this.props.createBookmark}
+        />
       </div>
     );
   }
@@ -27,4 +31,4 @@ function mapStateToProps(state) {
 }
 
 //  connect to redux store
-export default connect(mapStateToProps, { fetchBookmarks, deleteBookmark })(App);
+export default connect(mapStateToProps, { fetchBookmarks, deleteBookmark, createBookmark })(App);
