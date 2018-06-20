@@ -1,0 +1,12 @@
+@import "../../../global-styles/_variables";
+
+.bookmarks-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media #{$medium-screen} {
+    width: 100%;
+  }
+}

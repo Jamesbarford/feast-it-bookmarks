@@ -1,0 +1,8 @@
+.bookmarks-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .bookmarks-form {
+      width: 100%; } }

@@ -1,0 +1,13 @@
+.bookmarks-container {
+  width: 710px;
+  min-height: 500px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  transition: .8s;
+  justify-content: center;
+  box-shadow: 0 2px 12px 6px rgba(167, 196, 220, 0.5); }
+  @media (max-width: 768px) {
+    .bookmarks-container {
+      width: 100%;
+      flex-direction: column; } }
