@@ -10,7 +10,7 @@ import './bookmarks-list-item.css';
 
 const ListItem = props => (
   <li className="list-item">
-    <a className="list-link" href={props.link}>{props.name}</a>
+    <a className="list-link" href={props.link} target="_blank">{props.name}</a>
     <button className="list-button" onClick={() => { props.deleteBookmark(props.id); }}>delete</button>
   </li>
 );
