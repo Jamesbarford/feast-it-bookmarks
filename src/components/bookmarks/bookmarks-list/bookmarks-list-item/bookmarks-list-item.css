@@ -9,4 +9,11 @@
 .list-button {
   background-color: #E66549;
   padding: 10px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 0.5s; }
+  .list-button:hover {
+    border: 2px solid #E66549;
+    background: #FFF;
+    transition: 0.5s;
+    cursor: pointer; }

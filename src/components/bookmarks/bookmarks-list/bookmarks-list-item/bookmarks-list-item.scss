@@ -14,4 +14,13 @@
   background-color: $darkOrange;
   padding: 10px;
   border-radius: 8px;
+  border: 2px solid transparent;
+  transition: $transitionSmooth;
+
+  &:hover {
+    border: 2px solid $darkOrange;
+    background: $trueWhite;
+    transition: $transitionSmooth;
+    cursor: pointer;
+  }
 }
